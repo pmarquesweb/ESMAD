@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <!--
+        Ferramenta de gestão de ativos (imagens, aúdio, vídeo e objectos 3D) 
+        Isto permite pre-carregar os elementos mais pesados e melhorar a perfomance da nossa aplicação
+        -->
+        <a-assets>
+            <img id="metal" src="img/metal.jpg">
+            <img id="metal-normal" src="img/metal_normal.jpg">
+            <img id="tijolo" src="img/tijolo.jpg">
+            <img id="tijolo-normal" src="img/tijolo_normal.jpg">
+        </a-assets>
+
+        <!-- Caixa com textura de metal-->
+        <a-box
+        color="#ffffff"
+        position="2 1 -6"
+        width="4" height="4" depth="4"
+        src="#metal"
+        roughness="0.1" 
+        repeat="1 1"
+        normal-map="#metal-normal"
+        normal-scale="1 -1"
+        side="double"
+        ></a-box>
+
+        <!-- Caixa com textura de pedra-->
+        <a-box
+        color="#ffffff"
+        position="-2 1 -6"
+        width="4" height="4" depth="4"
+        src="#tijolo"
+        roughness="0.8"
+        repeat="1 1"
+        normal-map="#tijolo-normal"
+        normal-scale="1 -1"
+        side="double"
+        ></a-box>
+
+
+</a-scene>
+</body>
+</html>
