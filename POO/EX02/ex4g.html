@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numLim = +prompt('Range limit:');
+        let sumDiv = 0;
+
+        //loop through range
+        for (let i = 2; i <= numLim; i++) {
+
+            //check if the number has divisors
+            for (let x = i - 1; x > 1; x--) {
+                if (i % x == 0) {
+                    sumDiv++;
+                }                
+            }
+            if (sumDiv == 0) {
+                console.log(i);
+            } else {
+                //reset sum
+                sumDiv = 0;
+            }
+        }
+    </script>
+    
+</body>
+</html>
