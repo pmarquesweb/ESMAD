@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //A
+        function sayHello(name) {
+            console.log(`HELLO ${name}`)
+        }
+
+        //B
+        function calcArea(a, b) {
+            console.log(a * b);
+        }
+
+        //C
+        function calcInput () {
+            let intOne = +prompt("Enter integer:");
+            let intTwo = +prompt("Enter another integer:")
+            let operator = prompt("Enter operator:")
+            if (intTwo == 0 && operator === "/") {
+                alert("Not Possible.");
+                return false;
+            } else {
+                if (operator == '+'){
+                    alert(intOne + intTwo);
+                } 
+                else if (operator == '-'){
+                    alert(intOne - intTwo);
+                }
+                else if (operator == '*'){
+                    alert(intOne * intTwo);
+                }
+                else if (operator == '/'){
+                    alert(intOne / intTwo);
+                }
+                else {
+                    return false;
+                }
+            }
+        }
+
+        //D
+        function calcBMI() {
+            let weight = +prompt("Weight:");
+            let height = +prompt("Height (m):");
+            alert(weight/(height**2));
+        }
+
+        //E
+        function printEcho(s, n) {
+            let outcome = '';
+            for (let i = 0; i++; i < n) {
+                outcome += s;
+            }
+            console.log(outcome);
+        }
+
+        //F
+        function showRange(a, b) {
+            for (let i = a; i < b; i++) {
+                console.log(i);
+            }
+        }
+
+        //G
+        function showMultiplesThree(a, b) {
+            let sum = 0;
+            for (let i = a; i <= b; i++) {
+                if (i % 3 == 0) {
+                    sum += i;
+                }
+            }
+            console.log(sum);
+        }
+
+        //H
+        function showMultiplication(baseNumber) {
+            let multiplier = baseNumber == null ?1 :baseNumber;
+            for (let i = 1; i <= 10; i++) {
+                console.log(`${multiplier} x ${i} = ${multiplier * i}`);
+            }
+        }
+
+        //I
+        function calcSum() {
+            let sum = 0;
+ 
+            for (let i = 0; i < arguments.length; i++) {
+                sum += arguments[i];
+            }
+
+            console.log(sum);
+        }
+
+
+
+        //J
+
+    </script>
+</body>
+</html>
