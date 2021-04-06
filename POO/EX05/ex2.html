@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id='form1'>
+        Nome do jogo: <input type='text' id='name' value='name' required><br>
+        Ano: <input type='number' id='year' required><br>
+        Género: <select id='genre'>
+            <option value='action'>Ação</option>
+            <option value='adventure'>Aventura</option>
+            <option value='strategy'>Estratégia</option>
+            <option value='sports'>Desporto</option>
+            <option value='simulation'>Simulação</option>
+        </select><br>
+        Capa: <input type='url' id='cover' required><br>
+        <input type='submit' value='Adicionar'>
+        <input type='reset' value='Limpar'>
+    </form>
+    <table id='table1'>
+        <tr>
+            <th>Nome</th>
+            <th>Ano</th>
+            <th>Género</th>
+            <th>Capa</th>
+            <th>Opções</th>
+        </tr>
+    </table>
+    <script src = 'script2.js'></script>
+</body>
+</html>

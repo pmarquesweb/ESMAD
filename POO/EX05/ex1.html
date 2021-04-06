@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type = 'text' id = 'txtBox'>
+    <p></p>
+    <button>Clica-me</button>
+    <script>
+
+        //dom elements
+        const button = document.querySelector('button');
+        const txtBox = document.querySelector('#txtBox');
+        const para = document.querySelector('p');
+
+        //text copy event 
+        txtBox.addEventListener('input', function () {
+            para.innerHTML = txtBox.value;
+        })
+
+        //button event
+        button.addEventListener('click', function() {
+            alert(`${para.innerHTML.length} caracteres`);
+        })
+
+
+    </script>
+</body>
+</html>
