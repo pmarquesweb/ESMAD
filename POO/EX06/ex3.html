@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev Tech Talk</title>
+</head>
+<body>
+    <form id='form1'>
+        <label for='name'>Nome:</label>
+        <input type='text' id='name' required>
+        <br>
+
+        <label for="course">Curso:</label>
+        <input type="radio" name="course" value="tsiw" checked> TSIW
+        <input type="radio" name="course" value="multimedia"> Multimédia
+        <input type="radio" name="course" value="tcav"> TCAV
+        <input type="radio" name="course" value="design"> Design
+        <input type="radio" name="course" value="fotografia"> Fotografia
+        <br>
+        
+        <label for='profile'>Perfil:</label>
+        <select name='perfil' id='profile'>
+            <option value='student'>Estudante</option>
+            <option value='lecturer'>Docente</option>
+            <option value='worker'>Funcionário</option>
+            <option value='other'>Outro</option>
+        </select><br>
+
+        <label for='checkSession'>Sessão:</label>
+        <input type="checkbox" name="checkSession" value="manhã"> Manhã
+        <input type="checkbox" name="checkSession" value="tarde"> Tarde
+        <br>
+
+
+        <input type='submit' value='Adicionar'>
+        <input type='button' value='Contar'>
+    </form>
+
+    <table id='table1'>
+        <tr>
+            <th>Nome</th>
+            <th>Curso</th>
+            <th>Perfil</th>
+            <th>Sessão</th>
+        </tr>
+    </table>
+    <script src='script3.js'></script>
+</body>
+</html>
