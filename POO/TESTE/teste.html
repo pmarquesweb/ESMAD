@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhiteStore</title>
+</head>
+<body>
+    <table id='table1'>
+        <tr>
+            <th>PRODUTO</th>
+            <th>QTD</th>
+            <th>PU</th>
+            <th>IVA</th>
+            <th>SUBTOTAL</th>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form id='form1'>
+        <label for='costumerName'>Nome:</label>
+        <input type='text' id='costumerNameInput' required>
+        <br>
+
+        <label for='userProduct'>Produto:</label>
+        <select name='userProduct' id='userProductSelector'>
+            <option value=400>Desktop</option>
+            <option value=600>Portátil</option>
+            <option value=100>Monitor</option>
+            <option value=40>Teclado</option>
+            <option value=30>Rato</option>
+            <option value=75>Impressora</option>
+            <option value=50>Disco Externo</option>
+            <option value=150>Painel Solar</option>
+        </select>
+        <br>
+
+        <label for="iva">IVA:</label>
+        <input type="radio" name="iva" value=0.13> 13%
+        <input type="radio" name="iva" value=0.23 checked> 23%
+        <br>
+
+        <input type='submit' value='ADICIONAR'>
+        
+
+    </form>
+    
+
+
+<!--Todos os valores dos campos do formulário devem ser repostos à exceção do nome do cliente (5%)-->
+<!--O foco deve ficar no campo de seleção do produto (5%).-->
+<!--Tome nota que se um produto já existir este não deve ser inserido e deve surgir uma notificação-->
+<!--com o texto “PRODUTO JÁ EXISTENTE” (10%).-->
+
+
+    <script src='teste.js'></script>
+</body>
+</html>
